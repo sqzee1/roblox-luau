@@ -9,13 +9,11 @@ realm = "shared"
 Janitor = "howmanysmall/janitor@1.18.3"
 Signal = "sleitnick/signal@2.0.3"
 Promise = "evaera/promise@4.0.0"
-React = "th4tunkn0wndude/react@17.3.10"
 Ripple = "littensy/ripple@0.10.0"
-React-ripple = "littensy/react-ripple@3.0.1"
-react-roblox = "th4tunkn0wndude/react-roblox@17.3.10"
 Jecs = "ukendio/jecs@0.10.0"
 Packet = "ivasmigins/packet@0.1.0"
-DataService = "leifstout/dataservice@0.4.0"
+Vide = "alicesaidhi/vide@0.4.0"
+Vide-Ripple = "littensy/vide-ripple@0.10.2"
 
 [server-dependencies]
 
