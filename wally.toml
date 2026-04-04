@@ -10,11 +10,11 @@ Signal = "sleitnick/signal@2.0.3"
 Promise = "evaera/promise@4.0.0"
 Ripple = "littensy/ripple@0.10.0"
 Jecs = "ukendio/jecs@0.10.0"
-Packet = "ivasmigins/packet@0.1.0"
 Vide = "alicesaidhi/vide@0.4.0"
 Vide-Ripple = "littensy/vide-ripple@0.10.2"
 Charm = "littensy/charm@0.10.0"
-Trove = "sleitnick/trove@1.8.0"
+Confetti = "sqzee1/confetti@2.0.2"
+Janitor = "howmanysmall/janitor@1.18.3"
 Lync = "axp3cter/lync@2.1.0"
 
 [server-dependencies]
