@@ -15,7 +15,8 @@ Vide-Ripple = "littensy/vide-ripple@0.10.2"
 Charm = "littensy/charm@0.10.0"
 Confetti = "sqzee1/confetti@2.0.2"
 Janitor = "howmanysmall/janitor@1.18.3"
-Lync = "axp3cter/lync@2.1.0"
+Lync = "axp3cter/lync@2.1.2"
+QuickZone = "ldgerrits/quickzone@1.3.187"
 
 [server-dependencies]
 
