@@ -1,0 +1,11 @@
+std = "roblox"
+
+[lints]
+global_usage = "warn"
+unused_variable = "warn"
+unused_function = "warn"
+shadowing = "warn"
+if_same_then_else = "warn"
+empty_if = "warn"
+incorrect_standard_library_use = "warn"
+mixed_table = "warn"
