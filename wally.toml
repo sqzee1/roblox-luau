@@ -6,18 +6,17 @@ realm = "shared"
 
 [dependencies]
 
-Signal = "sleitnick/signal@2.0.3"
-Promise = "evaera/promise@4.0.0"
-Ripple = "littensy/ripple@0.10.0"
-Jecs = "ukendio/jecs@0.10.0"
-Vide = "alicesaidhi/vide@0.4.0"
-Vide-Ripple = "littensy/vide-ripple@0.10.2"
-Charm = "littensy/charm@0.10.0"
-Confetti = "sqzee1/confetti@2.0.2"
-Janitor = "howmanysmall/janitor@1.18.3"
-Lync = "axp3cter/lync@2.1.2"
-QuickZone = "ldgerrits/quickzone@1.3.187"
+signal = "sleitnick/signal@2.0.3"
+promise = "evaera/promise@4.0.0"
+ripple = "littensy/ripple@0.10.0"
+jecs = "ukendio/jecs@0.11.0"
+vide = "alicesaidhi/vide@0.4.0"
+vide-ripple = "littensy/vide-ripple@0.10.2"
+charm = "littensy/charm@0.11.0"
+charm-sync = "littensy/charm-sync@0.4.0"
+janitor = "howmanysmall/janitor@1.18.3"
+quickzone = "ldgerrits/quickzone@1.4.6"
 
 [server-dependencies]
 
-ProfileStore = "lm-loleris/profilestore@1.0.3"
+profile-store = "lm-loleris/profilestore@1.0.3"
