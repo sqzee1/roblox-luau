@@ -1,0 +1,90 @@
+{
+  "languages": {
+    "Luau": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "lsp": {
+    "luau-lsp": {
+      "settings": {
+        "roblox": {
+          // This is a Rojo-synced Roblox project, so Roblox globals/types are needed.
+          "enabled": true,
+          "security_level": "plugin",
+          "download_api_documentation": true,
+          "download_definitions": true
+        },
+        "fflags": {
+          "enable_by_default": false,
+          "enable_new_solver": true,
+          "sync": true,
+          "override": {}
+        },
+        "plugin": {
+          // No Studio plugin sync workflow here; sync is done via `rojo serve`.
+          "enabled": false
+        },
+        "luau-lsp": {
+          "sourcemap": {
+            "enabled": true,
+            "autogenerate": true,
+            "rojoProjectFile": "default.project.json",
+            "includeNonScripts": true,
+            "sourcemapFile": "sourcemap.json"
+          },
+          "diagnostics": {
+            "includeDependents": true,
+            "workspace": false,
+            "strictDatamodelTypes": true
+          },
+          "inlayHints": {
+            "parameterNames": "literals",
+            "variableTypes": true,
+            "parameterTypes": true,
+            "functionReturnTypes": true,
+            "hideHintsForErrorTypes": true,
+            "hideHintsForMatchingParameterNames": true,
+            "typeHintMaxLength": 50,
+            "makeInsertable": true
+          },
+          "hover": {
+            "enabled": true,
+            "strictDatamodelTypes": true,
+            "includeStringLength": true
+          },
+          "completion": {
+            "enabled": true,
+            "imports": {
+              "enabled": true,
+              "suggestServices": true,
+              "suggestRequires": true,
+              "requireStyle": "Auto",
+              "ignoreGlobs": ["**/_Index/**"]
+            },
+            "addParentheses": true,
+            "addTabstopAfterParentheses": true,
+            "fillCallArguments": true,
+            "showKeywords": true
+          },
+          "signatureHelp": {
+            "enabled": true
+          },
+          "index": {
+            "enabled": true,
+            "maxFiles": 10000
+          }
+        }
+      }
+    }
+  }
+}
