@@ -17,6 +17,7 @@ charm-sync = "littensy/charm-sync@0.4.0"
 janitor = "howmanysmall/janitor@1.18.3"
 quickzone = "ldgerrits/quickzone@1.4.6"
 sera = "enzzyfrenzzy/sera@0.0.2"
+lync = "axp3cter/lync@2.3.3"
 
 [server-dependencies]
 
