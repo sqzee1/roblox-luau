@@ -1,11 +1,11 @@
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local ServerScriptService = game:GetService("ServerScriptService")
-local ProfileStore = require(ServerScriptService.ServerPackages["profile-store"])
+local profile_store = require(ServerScriptService.ServerPackages["profile-store"])
 
 local PlayerTemplate = {}
 
-local PlayerDataStore = ProfileStore.New("PlayerDataStore", PlayerTemplate)
+local PlayerDataStore = profile_store.New("PlayerDataStore", PlayerTemplate)
 
 if RunService:IsStudio() then
     PlayerDataStore = PlayerDataStore.Mock
@@ -13,14 +13,14 @@ if RunService:IsStudio() then
 end
 
 local PlayerData = {}
-PlayerData._profiles = {} :: { [Player]: ProfileStore.Profile<typeof(PlayerTemplate)> }
+PlayerData._profiles = {} :: { [Player]: profile_store.Profile<typeof(PlayerTemplate)> }
 
 type PlayerData = typeof(PlayerData)
 
 function PlayerData.hydrate(
     self: PlayerData,
     player: Player,
-    profile: ProfileStore.Profile<typeof(PlayerTemplate)>
+    profile: profile_store.Profile<typeof(PlayerTemplate)>
 )
     print("Initializing data for player " .. player.Name)
 end
