@@ -6,9 +6,8 @@ if RunService:IsServer() then
 end
 
 local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui") :: PlayerGui
 
-local ClientUtils = {
-    PlayerGui = player:WaitForChild("PlayerGui") :: PlayerGui,
+return {
+    playerGui = playerGui,
 }
-
-return ClientUtils
