@@ -7,32 +7,12 @@
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "Packages"
-			},
-			"shared": {
-				"$className": "Folder",
-				"$ignoreUnknownInstances": false,
-				"Inventory": {
-					"$ignoreUnknownInstances": false,
-					"$path": {
-						"optional": "src/Inventory/shared"
-					}
-				}
 			}
 		},
 		"RobloxPluginGuiService": {},
 		"ServerScriptService": {
 			"ServerPackages": {
 				"$path": "ServerPackages"
-			},
-			"server": {
-				"$className": "Folder",
-				"$ignoreUnknownInstances": false,
-				"Inventory": {
-					"$ignoreUnknownInstances": false,
-					"$path": {
-						"optional": "src/Inventory/server"
-					}
-				}
 			}
 		},
 		"ServerStorage": {},
@@ -41,18 +21,7 @@
 		"StarterPack": {},
 		"StarterPlayer": {
 			"StarterCharacterScripts": {},
-			"StarterPlayerScripts": {
-				"client": {
-					"$className": "Folder",
-					"$ignoreUnknownInstances": false,
-					"Inventory": {
-						"$ignoreUnknownInstances": false,
-						"$path": {
-							"optional": "src/Inventory/client"
-						}
-					}
-				}
-			}
+			"StarterPlayerScripts": {}
 		},
 		"Workspace": {}
 	}
