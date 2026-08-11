@@ -1,32 +1,59 @@
 {
-  "name": "roblox-luau",
-  "tree": {
-    "$className": "DataModel",
-    "ReplicatedFirst": {
-      "$path": "src/first"
-    },
-    "ReplicatedStorage": {
-      "Shared": {
-        "$path": "src/shared"
-      },
-      "Packages": {
-        "$path": "Packages"
-      }
-    },
-    "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      },
-      "ServerPackages": {
-        "$path": "ServerPackages"
-      }
-    },
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    }
-  }
+	"name": "template-luau",
+	"tree": {
+		"$className": "DataModel",
+		"Lighting": {},
+		"ReplicatedFirst": {},
+		"ReplicatedStorage": {
+			"Packages": {
+				"$path": "Packages"
+			},
+			"shared": {
+				"$className": "Folder",
+				"$ignoreUnknownInstances": false,
+				"Inventory": {
+					"$ignoreUnknownInstances": false,
+					"$path": {
+						"optional": "src/Inventory/shared"
+					}
+				}
+			}
+		},
+		"RobloxPluginGuiService": {},
+		"ServerScriptService": {
+			"ServerPackages": {
+				"$path": "ServerPackages"
+			},
+			"server": {
+				"$className": "Folder",
+				"$ignoreUnknownInstances": false,
+				"Inventory": {
+					"$ignoreUnknownInstances": false,
+					"$path": {
+						"optional": "src/Inventory/server"
+					}
+				}
+			}
+		},
+		"ServerStorage": {},
+		"SoundService": {},
+		"StarterGui": {},
+		"StarterPack": {},
+		"StarterPlayer": {
+			"StarterCharacterScripts": {},
+			"StarterPlayerScripts": {
+				"client": {
+					"$className": "Folder",
+					"$ignoreUnknownInstances": false,
+					"Inventory": {
+						"$ignoreUnknownInstances": false,
+						"$path": {
+							"optional": "src/Inventory/client"
+						}
+					}
+				}
+			}
+		},
+		"Workspace": {}
+	}
 }

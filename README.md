@@ -4,7 +4,11 @@
 
 **Toolchain:** [rokit](https://github.com/rojo-rbx/rokit), [rojo](https://rojo.space/), [wally](https://wally.run/), wally-package-types
 
+**Task runner:** [just](https://github.com/casey/just) — `justfile` wraps the multi-step commands below into single ones (`just deps`, `just build`, ...). See `just --list`.
+
 **Lint & Format:** [selene](https://kampfkarren.github.io/selene/), [stylua](https://github.com/JohnnyMorganz/StyLua)
+
+**Architecture:** [rogen](https://github.com/LDGerrits/rogen) — feature-based folder routing. Generates `default.project.json` from `src/` — not hand-edited anymore.
 
 **Networking:** [lync](https://wally.run/package/axp3cter/lync)
 
@@ -24,19 +28,16 @@
 
 **Utils:** [sera](https://wally.run/package/enzzyfrenzzy/sera), [signal](https://wally.run/package/sleitnick/signal)
 
-## Setup
+## Commands
 
 ```bash
-rokit install   # install rojo, wally, stylua, wally-package-types
-wally install    # install packages
+just setup    # first time only
+just update   # after editing wally.toml
+just watch    # terminal 1, everyday or run task
+just serve    # terminal 2, everyday or run task
+just lint
+just format
+just build
 ```
 
-## Scripts
-
-```bash
-rojo serve                                                      # serve project to Roblox Studio
-rojo sourcemap default.project.json --output sourcemap.json -w  # regenerate sourcemap on change
-wally install                                                   # install/update Packages
-wally-package-types --sourcemap sourcemap.json Packages/        # generate types for client packages
-wally-package-types --sourcemap sourcemap.json ServerPackages/  # generate types for server packages
-```
+VS Code: `Ctrl+Shift+B` (or Command Palette → Run Task → `dev`) opens `watch`+`serve` in two integrated terminal tabs at once — see `.vscode/tasks.json`.
