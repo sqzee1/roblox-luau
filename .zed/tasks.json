@@ -1,0 +1,16 @@
+[
+  {
+    "label": "rogen watch",
+    "command": "rogen watch",
+    "reveal": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true
+  },
+  {
+    "label": "rojo serve",
+    "command": "rojo serve",
+    "reveal": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true
+  }
+]
