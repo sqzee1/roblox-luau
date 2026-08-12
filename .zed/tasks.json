@@ -12,5 +12,12 @@
     "reveal": "always",
     "allow_concurrent_runs": true,
     "use_new_terminal": true
+  },
+  {
+    "label": "sourcemap watch",
+    "command": "rojo sourcemap --watch default.project.json --output sourcemap.json",
+    "reveal": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true
   }
 ]
