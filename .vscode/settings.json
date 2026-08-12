@@ -1,7 +1,13 @@
 {
-    "stylua.targetReleaseVersion": "latest",
     "[luau]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua",
         "editor.formatOnSave": true
-    }
+    },
+    "luau-lsp.types.definitionFiles": {
+        "global": "types/global.d.luau",
+        "game": "types/game.d.luau"
+    },
+    "luau-lsp.completion.autocompleteEnd": true,
+    "luau-lsp.completion.imports.useConst": true,
+    "luau-lsp.completion.showPropertiesOnMethodCall": true
 }

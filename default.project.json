@@ -1,5 +1,9 @@
 {
 	"name": "template-luau",
+	"globIgnorePaths": [
+		"Packages/_Index/**/*.project.json",
+		"ServerPackages/_Index/**/*.project.json"
+	],
 	"tree": {
 		"$className": "DataModel",
 		"Lighting": {},
