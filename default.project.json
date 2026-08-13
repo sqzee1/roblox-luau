@@ -18,6 +18,11 @@
 						"$path": {
 							"optional": "src/data/PlayerTemplate.luau"
 						}
+					},
+					"ProfileState": {
+						"$path": {
+							"optional": "src/data/ProfileState.luau"
+						}
 					}
 				},
 				"network": {
