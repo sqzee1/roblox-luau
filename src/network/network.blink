@@ -1,0 +1,16 @@
+
+option ClientOutput = "network/client/net"
+option ServerOutput = "network/server/net"
+
+event Ready {
+    from: Client,
+    type: Reliable,
+    call: SingleSync,
+}
+
+event SyncData {
+    from: Server,
+    type: Reliable,
+    call: SingleSync,
+    data: unknown,
+}
