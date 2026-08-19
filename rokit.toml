@@ -6,11 +6,11 @@
 # Warning: ROJO 7.7.0 cause some issues 
 
 [tools]
-rojo = "rojo-rbx/rojo@7.6.1" 
+rojo = "rojo-rbx/rojo@7.6.1"
 wally = "UpliftGames/wally@0.3.2"
 wally-package-types = "JohnnyMorganz/wally-package-types@1.6.2"
 stylua = "JohnnyMorganz/StyLua@2.5.2"
 selene = "Kampfkarren/selene@0.31.0"
-rogen = "LDGerrits/rogen@1.4.2"
+rogen = "LDGerrits/rogen@1.4.3"
 just = "casey/just@1.58.0"
 blink = "1Axen/blink@0.18.8"

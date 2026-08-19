@@ -7,50 +7,12 @@
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "Packages"
-			},
-			"shared": {
-				"$className": "Folder",
-				"$ignoreUnknownInstances": false,
-				"data": {
-					"$className": "Folder",
-					"$ignoreUnknownInstances": false,
-					"PlayerTemplate": {
-						"$path": {
-							"optional": "src/data/PlayerTemplate.luau"
-						}
-					},
-					"ProfileState": {
-						"$path": {
-							"optional": "src/data/ProfileState.luau"
-						}
-					}
-				},
-				"network": {
-					"$className": "Folder",
-					"$ignoreUnknownInstances": false
-				}
 			}
 		},
 		"RobloxPluginGuiService": {},
 		"ServerScriptService": {
 			"ServerPackages": {
 				"$path": "ServerPackages"
-			},
-			"server": {
-				"$className": "Folder",
-				"$ignoreUnknownInstances": false,
-				"data": {
-					"$ignoreUnknownInstances": false,
-					"$path": {
-						"optional": "src/data/server"
-					}
-				},
-				"network": {
-					"$ignoreUnknownInstances": false,
-					"$path": {
-						"optional": "src/network/server"
-					}
-				}
 			}
 		},
 		"ServerStorage": {},
@@ -59,18 +21,7 @@
 		"StarterPack": {},
 		"StarterPlayer": {
 			"StarterCharacterScripts": {},
-			"StarterPlayerScripts": {
-				"client": {
-					"$className": "Folder",
-					"$ignoreUnknownInstances": false,
-					"network": {
-						"$ignoreUnknownInstances": false,
-						"$path": {
-							"optional": "src/network/client"
-						}
-					}
-				}
-			}
+			"StarterPlayerScripts": {}
 		},
 		"Workspace": {}
 	}
