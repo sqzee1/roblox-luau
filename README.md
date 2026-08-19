@@ -8,8 +8,6 @@
 
 **Lint & Format:** [selene](https://kampfkarren.github.io/selene/), [stylua](https://github.com/JohnnyMorganz/StyLua)
 
-**Architecture:** [rogen](https://github.com/LDGerrits/rogen) — feature-based folder routing. Generates `default.project.json` from `src/` — not hand-edited anymore.
-
 **Networking:** [lync](https://wally.run/package/axp3cter/lync)
 
 **Data:** [profile-store](https://wally.run/package/lm-loleris/profilestore)
@@ -33,11 +31,10 @@
 ```bash
 just setup    # first time only
 just update   # after editing wally.toml
-just watch    # terminal 1, everyday or run task
-just serve    # terminal 2, everyday or run task
+just serve    # everyday, or run task
 just lint
 just format
 just build
 ```
 
-VS Code: `Ctrl+Shift+B` (or Command Palette → Run Task → `dev`) opens `watch`+`serve` in two integrated terminal tabs at once — see `.vscode/tasks.json`.
+VS Code: `Ctrl+Shift+B` (or Command Palette → Run Task → `dev`) opens `rojo serve` + sourcemap watch in integrated terminal tabs at once — see `.vscode/tasks.json`.

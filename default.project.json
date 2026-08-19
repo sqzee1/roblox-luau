@@ -2,27 +2,32 @@
 	"name": "template-luau",
 	"tree": {
 		"$className": "DataModel",
-		"Lighting": {},
-		"ReplicatedFirst": {},
+		"ReplicatedFirst": {
+			"$path": "src/replicated-first"
+		},
 		"ReplicatedStorage": {
+			"Shared": {
+				"$path": "src/shared"
+			},
 			"Packages": {
 				"$path": "Packages"
 			}
 		},
-		"RobloxPluginGuiService": {},
 		"ServerScriptService": {
+			"Server": {
+				"$path": "src/server"
+			},
 			"ServerPackages": {
 				"$path": "ServerPackages"
 			}
 		},
-		"ServerStorage": {},
-		"SoundService": {},
-		"StarterGui": {},
-		"StarterPack": {},
 		"StarterPlayer": {
 			"StarterCharacterScripts": {},
-			"StarterPlayerScripts": {}
-		},
-		"Workspace": {}
+			"StarterPlayerScripts": {
+				"Client": {
+					"$path": "src/client"
+				}
+			}
+		}
 	}
 }

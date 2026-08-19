@@ -30,8 +30,5 @@ build:
     rojo build default.project.json --output release.rbxl
 
 # dev loop — run in two separate terminals (can't merge two watchers into one)
-watch:
-    rogen watch
-
 serve:
     rojo serve
